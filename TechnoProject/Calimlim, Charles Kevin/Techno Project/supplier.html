@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="companylogo.png">
+  </head>
+  <body>
+    <div class="grid-container">
+      <img src="companylogo.png" class="logo">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+          
+          </div>
+          
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item" onclick="window.location.href = 'dashboard.html';">
+            
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            
+          </li>
+          <li class="sidebar-list-item" onclick="window.location.href = '#';">
+            
+              <span class="material-icons-outlined">local_shipping</span> Supplier
+            
+          </li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'worker.html';">
+            
+              <span class="material-icons-outlined">category</span> Workers
+          
+          </li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'inventory.html';">
+            
+            <span class="material-icons-outlined">inventory_2</span> Inventory
+        
+        </li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'customer.html';">
+            
+              <span class="material-icons-outlined">sms</span> Inquiries
+            
+          </li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'orders.html';">
+            
+              <span class="material-icons-outlined">fact_check</span> Orders
+            
+          </li>
+          
+          <li class="sidebar-list-item" onclick="window.location.href = 'index.html';">
+            
+              <span class="material-icons-outlined">keyboard_return</span> Logout
+          
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+     
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="companylogo.png">
+  </head>
+  <body>
+    <div class="grid-container">
+      <img src="companylogo.png" class="logo">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+          
+          </div>
+          
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item" onclick="window.location.href = 'dashboard.html';">
+            
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            
+          </li>
+         
+          <li class="sidebar-list-item" onclick="window.location.href = 'worker.html';">
+            
+              <span class="material-icons-outlined">category</span> Workers
+          
+          </li>
+		  <li class="sidebar-list-item" onclick="window.location.href = 'inventory.html';">
+            
+			<span class="material-icons-outlined">inventory_2</span> Inventory
+		
+		</li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'customer.html';">
+            
+              <span class="material-icons-outlined">sms</span> Inquiries
+            
+          </li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'orders.html';">
+            
+              <span class="material-icons-outlined">fact_check</span> Orders
+            
+          </li>
+          
+          <li class="sidebar-list-item" onclick="window.location.href = 'index.html';">
+            
+              <span class="material-icons-outlined">keyboard_return</span> Logout
+          
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main>
+        <div class="attendance-list2">
+
+          <div class="tabs">
+        
+                <div class="heading">
+                  <h1>Inventory</h1>
+                 
+                </div>
+                <div class="add-item">
+                  <form class="form">
+                    <div class="mb-3">
+                 
+                    
+                      </label>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">
+                        Product Name:
+                        <input
+                          id="current_order_product_quantity"
+                          class="form-control"
+                          type="text"
+                          required
+                        />
+                      </label>
+                      <label class="form-label">
+                        Quantity:
+                        <input
+                          id="current_order_product_price"
+                          class="form-control"
+                          type="number"
+                          required
+                        />
+                      </label>
+                    </div>
+                    <div class="mb-3">
+                      <button
+                        class="btn btn-success"
+                        onclick="addCurrentInventory()"
+                        type="button"
+                      >
+                        Add
+                      </button>
+                      <button class="btn btn-danger" type="reset">Reset</button>
+                    </div>
+                  </form>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th>Date</th>
+                      <th scope="col">Quantity</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody id="current_inventory_list">
+                    <tr class="active">
+                      <th scope="row">1</th>
+                      <td>Smart Wallet</td>
+                      <td>04-05-24</td>
+                      <td>10</td>
+                      
+                    </tr>
+                    <tr class="active">
+                      <th scope="row">2</th>
+                      <td>Smart Wallet</td>
+                      <td>04-01-24</td>
+                      <td>15</td>
+                      
+                    </tr>
+                    <tr class="active">
+                      <th scope="row">3</th>
+                      <td>Smart Wallet</td>
+                      <td>03-05-24</td>
+                      <td>20</td>
+                      
+                    </tr>
+                  
+               
+              
+            
+      
+	
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

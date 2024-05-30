@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="companylogo.png">
+  </head>
+  <body>
+    <div class="grid-container">
+      <img src="companylogo.png" class="logo">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+          
+          </div>
+          
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item" onclick="window.location.href = 'dashboard.html';">
+            
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            
+          </li>
+         
+          <li class="sidebar-list-item" onclick="window.location.href = 'worker.html';">
+            
+              <span class="material-icons-outlined">category</span> Workers
+          
+          </li>
+		  <li class="sidebar-list-item" onclick="window.location.href = 'worker.html';">
+            
+			<span class="material-icons-outlined">inventory_2</span> Inventory
+		
+		</li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'customer.html';">
+            
+              <span class="material-icons-outlined">sms</span> Inquiries
+            
+          </li>
+          <li class="sidebar-list-item" onclick="window.location.href = 'orders.html';">
+            
+              <span class="material-icons-outlined">fact_check</span> Orders
+            
+          </li>
+          
+          <li class="sidebar-list-item" onclick="window.location.href = 'index.html';">
+            
+              <span class="material-icons-outlined">keyboard_return</span> Logout
+          
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+       
+
+		<section id="content">
+	
+			<!-- MAIN -->
+			<main>
+			
+				
+				<div class="table-data">
+					<div class="order">
+						<div class="head">
+							<h1>Orders</h1>
+							<i class='bx bx-search' ></i>
+							<i class='bx bx-filter' ></i>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Transaction ID</th>
+									<th>User</th>
+									<th>Email</th>
+									<th>Date Order</th>
+									<th>Qty</th>
+									<th>Status</th>
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<p>FsCQO8xY3i</p>
+									</td>
+									<td>
+										<img src="img/steve.png">
+										<p>Steve Rogers</p>
+									</td>
+									<td>steve@gmail.com</td>
+									<td>01-10-2022</td>
+									<td>2</td>
+									<td><span class="status completed">Completed</span></td>
+								</tr>
+								<tr>
+									<td>
+										<p>wHiGjMqKV7</p>
+									</td>
+									<td>
+										<img src="img/pete.jpg">
+										<p>Peter Parker</p>
+									</td>
+									<td>iamspiderman@gmail.com</td>
+									<td>02-24-2023</td>
+									<td>4</td>
+									<td><span class="status shipped">Shipped</span></td>
+								</tr>
+								<tr>
+									<td><p>cSKsJP6GB7</p></td>
+									<td>
+										<img src="img/bruce.jpg">
+										<p>Bruce Banner</p>
+									</td>
+									<td>banner@gmail.com</td>
+									<td>03-10-2023</td>
+									<td>1</td>
+									<td><span class="status process">Process</span></td>
+								</tr>
+								<tr>
+									<td><p>iq8fCCY2Zf</p></td>
+									<td>
+										<img src="img/thor.jpg">
+										<p>Thor Odinson</p>
+									</td>
+									<td>asgard@gmail.com</td>
+									<td>04-17-2023</td>
+									<td>2</td>
+									<td><span class="status pending">Pending</span></td>
+								</tr>
+								<tr>
+									<td><p>HdAKnsFJN9</p></td>
+									<td>
+										<img src="img/tony.jpg">
+										<p>Tony Stark</p>
+									</td>
+									<td>iloveyou3000@gmail.com</td>
+									<td>05-11-2023</td>
+									<td>1</td>
+									<td><span class="status completed">Completed</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+			</main>
+			<!-- MAIN -->
+		</section>
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
